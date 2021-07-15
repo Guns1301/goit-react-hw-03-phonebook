@@ -10,7 +10,7 @@ const Contacts = ({ contactList, deleteContact }) => (
         <button
           className={styles.btn}
           type="button"
-          onClick={() => deleteContact(contact.id)}
+          onClick={() => deleteContact(contact.id)} //тут забирается id для передачи в метод удаления у Компонента
         >
           Delete
         </button>

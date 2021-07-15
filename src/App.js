@@ -43,6 +43,8 @@ export class App extends Component {
   deleteContact = (contactId) => {
     this.setState((prev) => ({
       contacts: prev.contacts.filter((contact) => contact.id !== contactId),
+      // берем предидущий массив контактов , фильтруем, и в новый массив собираем лишь те id которых не равен переданому id.
+      // и кидаем в Компонент Контактов ссылку на этот метод, а Компонет передает через пропсы id
     }));
   };
 
